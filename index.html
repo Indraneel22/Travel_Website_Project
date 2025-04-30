@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .carousel-item{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 600px;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card{
+      margin-top: 20px;
+      width: 30%;
+      min-width: 250px;
+      margin-top: 30px;
+    }
+    .card:hover{
+      background-color: cyan;
+    }
+    .card-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 150px;
+    }
+    .card img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      
+    }
+   .end{
+    text-align: center;
+    background-color: rgb(202, 121, 54);
+    color: white;
+    font-size: medium;
+   }
+   
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: rgb(238, 21, 21); font-weight: bold; font-size: larger;">Dream Escape Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OUR TOURS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Domestic Tours</a></li>
+                  <li><a class="dropdown-item" href="#">International Tours</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Group Tours</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SPECIALITY TOURS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Adventure Tours</a></li>
+                  <li><a class="dropdown-item" href="#">Luxury Tours</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Honemoon Tours</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2VyYWxhfGVufDB8fDB8fHww" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.pikbest.com/origin/09/19/31/523pIkbEsTZrp.jpg!bw700" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/608540602/photo/aerial-panorama-of-botafogo-bay-rio-de-janeiro.jpg?b=1&s=612x612&w=0&k=20&c=AYBv5J1BFCDwrLfZ1dKTb04xJahuQj6ZsRSYz0XONTk=" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://t3.ftcdn.net/jpg/03/34/77/78/360_F_334777839_Y7Y5P8FFY5WFo7sTwjeT0vxDbTGxhIo5.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-container">
+      <div class="card" style="width: 18rem;">
+        <img src="https://thumbs.dreamstime.com/b/backwaters-kerala-houseboat-india-45692218.jpg" class="card-img-top" alt="Kerla">
+        <div class="card-body">
+          <h5 class="card-title">Amazing Kerala</h5>
+          <p class="card-text">Kerala, known as "God's Own Country," offers a perfect blend of natural beauty and cultural heritage. From its tranquil backwaters and stunning beaches to lush hill stations and vibrant festivals, Kerala promises a serene yet enriching travel experience. </p>
+          <a href="https://www.keralatourism.org/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://t3.ftcdn.net/jpg/03/34/77/78/360_F_334777839_Y7Y5P8FFY5WFo7sTwjeT0vxDbTGxhIo5.jpg" class="card-img-top" alt="Maldives">
+        <div class="card-body">
+          <h5 class="card-title">Marvelous Maldives</h5>
+          <p class="card-text">The Maldives is a tropical paradise known for its crystal-clear waters, overwater bungalows, and vibrant coral reefs. With its pristine beaches and luxurious resorts, it offers an idyllic escape for relaxation, water sports, and unparalleled beauty. </p>
+          <a href="https://www.tourism.gov.mv/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://t4.ftcdn.net/jpg/04/91/80/13/360_F_491801396_wxTTLGLdWUowUSA0C4RbgYxSgJSsojfu.jpg" class="card-img-top" alt="Japan">
+        <div class="card-body">
+          <h5 class="card-title">Joyfull Japan</h5>
+          <p class="card-text">Japan offers a stunning blend of ancient traditions and modern marvels, from tranquil temples and vibrant gardens to bustling cities like Tokyo and Osaka. Explore its rich culture, unique cuisine,.</p>
+          <a href="https://www.japan.travel/en/in/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://cdn.pixabay.com/photo/2020/01/31/21/25/brazil-4809011_640.jpg" class="card-img-top" alt="Brazil">
+        <div class="card-body">
+          <h5 class="card-title">Carnival Brazil</h5>
+          <p class="card-text">Brazil is a vibrant destination known for its lively festivals, pristine beaches, and lush rainforests. From the iconic Carnival in Rio to the natural beauty of the Amazon,.</p>
+          <a href="https://visitbrasil.com/en/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://plus.unsplash.com/premium_photo-1661963265512-73e8d1053b9a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9tZSUyMGl0YWx5fGVufDB8fDB8fHww" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Romantic Italy</h5>
+          <p class="card-text">Italy is a dream destination, where history, art, and stunning landscapes come together. From the canals of Venice to the ancient ruins of Rome and the rolling hills of Tuscany</p>
+          <a href="https://www.italia.it/en" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://thumbs.dreamstime.com/b/paris-eiffel-tower-river-seine-sunset-france-one-most-iconic-landmarks-107376702.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fabulous France</h5>
+          <p class="card-text">France is a timeless destination, renowned for its world-class art, iconic landmarks like the Eiffel Tower, and charming countryside. Whether indulging in gourmet cuisine, exploring historic cities,</p>
+          <a href="https://www.france.fr/en/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="end">Address: Near Bus stand,Collage Corner,Sangli,416416<br>
+            For online enquiries: www.Dream Escape Travel.com<br>
+        Mobile.No: 9370729630
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
